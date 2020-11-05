@@ -2,37 +2,38 @@
   <mat-toolbar-row>
     <!-- <span>My App</span> -->
     <span class="example-spacer"></span>
+    <h1 style="text-align: center;">Currency Convertion</h1>
   </mat-toolbar-row>
 </mat-toolbar>
 
 <div class="center">
-  <h1>Currency Convertion</h1>
+  
   <form class="example-form">
    
     <mat-form-field class="example-full-width"  appearance="outline">
       <mat-label>USDollar</mat-label>
       <input matInput name="rup" [(ngModel)]="rup"  (input)="calcrup()">
     </mat-form-field>
-
+    <br><br>
     <mat-form-field class="example-full-width"  appearance="outline">
       <mat-label>Rupee</mat-label>
       <input matInput name="dol" [(ngModel)]="dol" (input)="calcdol()">
     </mat-form-field>
-    
+    <br><br>
     <mat-form-field class="example-full-width"  appearance="outline">
       <mat-label>Japanese Yen</mat-label>
       <input matInput name="jpy" [(ngModel)]="jpy"  (input)="calcjpy()">
     </mat-form-field>
-
+    <br><br>
     <mat-form-field class="example-full-width"  appearance="outline">
       <mat-label>British Pound </mat-label>
       <input matInput name="gbp" [(ngModel)]="gbp"  (input)="calcgbp()">
     </mat-form-field>
-    
+    <br><br>
     <mat-form-field class="example-full-width"  appearance="outline">
       <mat-label> European Euro </mat-label>
       <input matInput name="eur" [(ngModel)]="eur"  (input)="calceur()">
-    </mat-form-field>   
-    <mat-icon (click)="reset()" id="icon">autorenew</mat-icon>
+    </mat-form-field>   <br><br>
+    <button mat-raised-button color="primary" (click)="reset()" id="icon">Reset</button>
   </form>
 </div>
